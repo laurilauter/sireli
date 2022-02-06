@@ -1,0 +1,369 @@
+/* RED BORDER FOR TESTING */
+
+div {
+  border: 1px solid red;
+}
+
+/* GLOBAL OPTIONS */
+
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sireli-majutus {
+  font-family: "Itim", serif;
+  font-size: 6em;
+  color: #e6e6e6;
+}
+
+.footer-bg {
+  background-color: #5b704c !important;
+}
+
+/* GALLERY START */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+/* GALLERY END */
+
+/* MOBILE VIEW */
+@media (max-width: 576px) {
+  .hero-container {
+    background-image: url("../img/hero_sirel.webp"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    width: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  /* START SLOGAN positioning */
+
+  .slogan-position {
+    margin-top: 3vh;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*  END SLOGAN positioning */
+
+  h1,
+  .h1 {
+    font-size: 2.2em;
+    font-weight: 300;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.8em;
+    font-weight: 300;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+
+  .commontext {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+
+  /* CARD STYLING START */
+  .card {
+    width: 18rem;
+  }
+  /* Phone icon size */
+  .phone-icon {
+    max-width: 30vw;
+    height: auto;
+  }
+
+  /* MAP options */
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 500px;
+    position: relative;
+    height: 0;
+  }
+}
+
+/* END MOBILE VIEW */
+
+/* DESKTOP VIEW */
+@media (min-width: 577px) {
+  .hero-container {
+    background-image: url("../img/hero_sirel.webp"); /* The image used */
+    background-color: green; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    width: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* START SLOGAN positioning */
+
+  .slogan-position {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    margin-top: auto;
+    margin-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0em 3em 0em;
+  }
+
+  /*   .nav-dark-bg {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+  } */
+
+  /* END SLOGAN positioning */
+
+  /* Global font settings */
+
+  h1,
+  .h1 {
+    font-size: 2.4em;
+    font-weight: 300;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .commontext {
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+
+  /* Restricts sucess image size on desktop */
+  .container > img {
+    max-height: 60%;
+    max-width: 60%;
+  }
+
+  /* CARD STYLING START */
+  .card {
+    width: 24rem;
+  }
+
+  .card-left {
+    margin-left: 10rem;
+  }
+
+  .card-right {
+    margin-right: 10rem;
+  }
+
+  /* MAP options */
+
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 700px;
+    position: relative;
+    height: 0;
+  }
+}
+
+/* END DESKTOP VIEW */
+
+/* START GLOBAL font styling */
+p {
+  line-height: 1.2;
+}
+
+.text-dark {
+  color: #454545;
+}
+
+.text-bright {
+  color: #e6e6e6;
+}
+
+.copyright {
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 600;
+  color: #454545;
+}
+
+/* END font styling */
+
+/* START MAP options */
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* END MAP options */
+
+/* Button styles START */
+
+.btn {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 40px;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  background-color: #87b865;
+  border-radius: 4px;
+  border: 1px solid silver;
+  padding: 16px 36px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.btn-saada {
+  /* width: fit-content; */
+  height: fit-content;
+  margin-top: 40px;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  background-color: #87b865;
+  border-radius: 4px;
+  border: 1px solid silver;
+  padding: 16px 36px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+/* Button styles END */
+
+/* Toggle brand START */
+
+.desk-logo {
+  background-image: url("../img/jalutame_160_60_white.svg"); /* The image used */
+  height: 60px; /* You must set a specified height */
+  width: 160px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.mobile-logo {
+  background-image: url("../img/jalutame_80_30_white.svg"); /* The image used */
+  height: 30px; /* You must set a specified height */
+  width: 80px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Toggle brand END */
+
+/* NAVBAR STYLING */
+/* change the background color */
+
+.navbar-default {
+  background: none;
+}
+
+.nav-item {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: rgb(229, 229, 204);
+  padding: 0;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: rgb(229, 229, 204);
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: rgb(242, 242, 242);
+}
+
+/* for dropdowns only */
+.navbar-custom .navbar-nav .dropdown-menu {
+  background-color: rgb(242, 242, 242);
+}
+
+/* dropdown item text color */
+.navbar-custom .navbar-nav .dropdown-item {
+  color: rgb(204, 204, 153);
+}
+
+/* dropdown item hover or focus */
+.navbar-custom .navbar-nav .dropdown-item:hover,
+.navbar-custom .navbar-nav .dropdown-item:focus {
+  color: #eeeeee;
+  background-color: white;
+}
+
+ul.nav a:hover {
+  color: #fff !important;
+}
+
+.mobile-nav-btn {
+  background-color: #87b865;
+}
+
+/* END NAVBAR STYLING */
