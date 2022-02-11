@@ -32,16 +32,41 @@ body {
 /* GALLERY START */
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+  grid-gap: 20px; */
 }
 
+/* .gallery img {
+  max-width: 250px;
+  height: 250px;
+} */
+
 .gallery img {
-  width: 100%;
+  border: 0px transparent;
+  border-radius: 0.5em;
+  width: 250px;
+}
+
+.gallery img:hover {
+  filter: brightness(80%);
 }
 
 /* GALLERY END */
+
+/* BED CARDS START */
+.card-border {
+  border: 1px solid lightgray;
+  border-radius: 0.5em;
+  margin: 0.5em;
+}
+
+.bed-icon {
+  width: 48px;
+  height: auto;
+}
+
+/* BED CARDS END */
 
 /* MOBILE VIEW */
 @media (max-width: 576px) {
