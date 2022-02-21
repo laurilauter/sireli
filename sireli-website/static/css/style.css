@@ -21,7 +21,7 @@ body {
 
 .sireli-majutus {
   font-family: "Itim", serif;
-  font-size: 6em;
+  font-size: 8em;
   color: #e6e6e6;
 }
 
@@ -71,7 +71,7 @@ body {
 /* MOBILE VIEW */
 @media (max-width: 576px) {
   .hero-container {
-    background-image: url("../img/hero_sirel.webp"); /* The image used */
+    background-image: url("../img/hero_pillow.webp"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 100vh; /* You must set a specified height */
     width: 100%;
@@ -144,7 +144,7 @@ body {
 /* DESKTOP VIEW */
 @media (min-width: 577px) {
   .hero-container {
-    background-image: url("../img/hero_sirel.webp"); /* The image used */
+    background-image: url("../img/hero_pillow.webp"); /* The image used */
     background-color: green; /* Used if the image is unavailable */
     height: 100vh; /* You must set a specified height */
     width: 100%;
@@ -183,7 +183,7 @@ body {
 
   h1,
   .h1 {
-    font-size: 2.4em;
+    font-size: 3.4em;
     font-weight: 300;
   }
 
