@@ -1,8 +1,8 @@
 /* RED BORDER FOR TESTING */
 
-div {
+/* div {
   border: 1px solid red;
-}
+} */
 
 /* GLOBAL OPTIONS */
 
@@ -19,14 +19,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sireli-majutus {
-  font-family: "Itim", serif;
-  font-size: 8em;
-  color: #e6e6e6;
-}
-
 .footer-bg {
   background-color: #5b704c !important;
+}
+
+.grey-bg {
+  background-color: #eeeeee !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* GALLERY START */
@@ -59,6 +63,7 @@ body {
   border: 1px solid lightgray;
   border-radius: 0.5em;
   margin: 0.5em;
+  width: 200px;
 }
 
 .bed-icon {
@@ -71,9 +76,19 @@ body {
 /* MOBILE VIEW */
 @media (max-width: 576px) {
   .hero-container {
-    background-image: url("../img/hero_pillow.webp"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
+    background-image: url("../img/hero_pillow_mobile.webp"); /* The image used */
+    background-color: #454545; /* Used if the image is unavailable */
     height: 100vh; /* You must set a specified height */
+    width: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .middle-container {
+    background-image: url("../img/hero_beach_mobile.webp"); /* The image used */
+    background-color: #454545; /* Used if the image is unavailable */
+    min-height: 100vh; /* You must set a specified height */
     width: 100%;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -83,13 +98,19 @@ body {
   /* START SLOGAN positioning */
 
   .slogan-position {
-    margin-top: 3vh;
+    margin-top: 30%;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
   }
 
   /*  END SLOGAN positioning */
+
+  .sireli-majutus {
+    font-family: "Itim", serif;
+    font-size: 3em;
+    color: #f3f3f3;
+  }
 
   h1,
   .h1 {
@@ -124,9 +145,10 @@ body {
   .card {
     width: 18rem;
   }
+
   /* Phone icon size */
   .phone-icon {
-    max-width: 30vw;
+    max-width: 25vw;
     height: auto;
   }
 
@@ -137,6 +159,11 @@ body {
     position: relative;
     height: 0;
   }
+
+  /* NAV  ITEMS */
+  .nav-item {
+    margin: -5px 0em;
+  }
 }
 
 /* END MOBILE VIEW */
@@ -145,8 +172,18 @@ body {
 @media (min-width: 577px) {
   .hero-container {
     background-image: url("../img/hero_pillow.webp"); /* The image used */
-    background-color: green; /* Used if the image is unavailable */
+    background-color: #454545; /* Used if the image is unavailable */
     height: 100vh; /* You must set a specified height */
+    width: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .middle-container {
+    background-image: url("../img/hero_beach.webp"); /* The image used */
+    background-color: #454545; /* Used if the image is unavailable */
+    min-height: 100vh; /* You must set a specified height */
     width: 100%;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -166,7 +203,7 @@ body {
   .slogan-position {
     /* background-color: rgba(0, 0, 0, 0.4); */
     margin-top: auto;
-    margin-bottom: 25%;
+    margin-bottom: 20%;
     margin-left: auto;
     margin-right: auto;
     padding: 1em 0em 3em 0em;
@@ -179,11 +216,22 @@ body {
 
   /* END SLOGAN positioning */
 
+  .sireli-majutus {
+    font-family: "Itim", serif;
+    font-size: 8em;
+    color: #f3f3f3;
+  }
+
+  /* NAV  ITEMS */
+  .nav-item {
+    margin: 0em 5em;
+  }
+
   /* Global font settings */
 
   h1,
   .h1 {
-    font-size: 3.4em;
+    font-size: 3em;
     font-weight: 300;
   }
 
@@ -218,15 +266,7 @@ body {
 
   /* CARD STYLING START */
   .card {
-    width: 24rem;
-  }
-
-  .card-left {
-    margin-left: 10rem;
-  }
-
-  .card-right {
-    margin-right: 10rem;
+    width: 16rem;
   }
 
   /* MAP options */
@@ -251,7 +291,7 @@ p {
 }
 
 .text-bright {
-  color: #e6e6e6;
+  color: #f3f3f3;
 }
 
 .copyright {
@@ -261,6 +301,31 @@ p {
 .bold {
   font-weight: 600;
   color: #454545;
+}
+
+a:link {
+  text-decoration: none;
+  color: #454545;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #454545;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* card hover expand */
+
+.card:hover {
+  height: auto;
+  width: 16.5em;
 }
 
 /* END font styling */
@@ -342,11 +407,6 @@ p {
   background: none;
 }
 
-.nav-item {
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
@@ -356,14 +416,14 @@ p {
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-  color: rgb(229, 229, 204);
+  color: rgb(252, 252, 252);
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:focus .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-  color: rgb(242, 242, 242);
+  color: rgb(198, 252, 182);
 }
 
 /* for dropdowns only */
@@ -373,7 +433,7 @@ p {
 
 /* dropdown item text color */
 .navbar-custom .navbar-nav .dropdown-item {
-  color: rgb(204, 204, 153);
+  color: rgb(253, 253, 253);
 }
 
 /* dropdown item hover or focus */

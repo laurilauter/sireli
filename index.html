@@ -36,7 +36,7 @@
             <nav class="navbar navbar-expand-sm navbar-light navbar-custom p-0">
               <div class="container-fluid">
                 <button
-                  class="navbar-toggler ms-auto m-1 mobile-nav-btn"
+                  class="navbar-toggler ms-auto mt-3 m-1 mobile-nav-btn"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarToggler"
@@ -47,18 +47,25 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
+                  <!-- <div class="row nav-menu">
+                    <span>
+                      <a class="nav-link" href="#majutus">Majutus</a>
+                    </span>
+                    <span>
+                      <a class="nav-link" href="#tegevused">Tegevused</a>
+                    </span>
+                    <span>
+                      <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </span>
+                  </div> -->
+
                   <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item h2">
-                      <a class="nav-link" href="#pealeht">Pealeht</a>
-                    </li>
-
-                    <li class="nav-item h2">
-                      <a class="nav-link" href="#meist">Majutus</a>
+                      <a class="nav-link" href="#majutus">Majutus</a>
                     </li>
                     <li class="nav-item h2">
-                      <a class="nav-link" href="#meist">Tegevused</a>
+                      <a class="nav-link" href="#tegevused">Tegevused</a>
                     </li>
-
                     <li class="nav-item h2">
                       <a class="nav-link" href="#kontakt">Kontakt</a>
                     </li>
@@ -69,19 +76,16 @@
           </div>
           <!-- NAVBAR END -->
 
-          <div class="row justify-content-center h-100 mt-3">
+          <div class="row justify-content-center h-100 mt-5">
             <div class="col-lg-12 slogan-position text-center">
               <h1 class="sireli-majutus">Sireli majutus</h1>
               <!-- <img
-              class="img-fluid"
-              src="static/img/sireli_logo_white_big.svg"
-              alt="Jalutame logo"
-            /> -->
+                class="img-fluid"
+                src="static/img/sireli_logo_white_big.svg"
+                alt="Jalutame logo"
+                /> -->
               <p class="text-bright h1">Rahulik puhkus ilusal saarel</p>
-              <button
-                class="btn"
-                onclick="location.href='kontakt.html#link-anchor';"
-              >
+              <button class="btn" onclick="location.href='#kontakt';">
                 BRONEERI
               </button>
             </div>
@@ -91,7 +95,7 @@
       <!-- CONTENT SECTION 1-->
 
       <div class="container-fluid" id="pealeht">
-        <div class="row p-4 commontext my-5 justify-content-center">
+        <div class="row p-4 commontext py-5 justify-content-center grey-bg">
           <div class="col-md-5 col-sm-12">
             <div>
               <h3>Mida pakume</h3>
@@ -123,7 +127,7 @@
                   data-fslightbox="gallery"
                   href="static/img/gallery/image1.jpg"
                   ><img
-                    class="img-fluid rounded"
+                    class="img-fluid rounded m-2"
                     src="static/img/gallery/image1.jpg"
                 /></a>
 
@@ -131,21 +135,21 @@
                   data-fslightbox="gallery"
                   href="static/img/gallery/image2.jpg"
                   ><img
-                    class="img-fluid rounded"
+                    class="img-fluid rounded m-2"
                     src="static/img/gallery/image2.jpg"
                 /></a>
                 <a
                   data-fslightbox="gallery"
                   href="static/img/gallery/image3.jpg"
                   ><img
-                    class="img-fluid rounded"
+                    class="img-fluid rounded m-2"
                     src="static/img/gallery/image3.jpg"
                 /></a>
                 <a
                   data-fslightbox="gallery"
                   href="static/img/gallery/image4.jpg"
                   ><img
-                    class="img-fluid rounded"
+                    class="img-fluid rounded m-2"
                     src="static/img/gallery/image4.jpg"
                 /></a>
                 <a
@@ -192,15 +196,15 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col col-lg-9 col-sm-12 my-2">
+        <div class="row justify-content-center py-5" id="majutus">
+          <div class="col col-lg-9 col-md-12 col-sm-12 my-2">
             <div class="row">
               <h4>Magamisvõimalused</h4>
             </div>
-            <div class="row justify-content-around">
+            <div class="row justify-content-around py-3">
               <div class="col-md-2 col-sm-12 card-border p-3">
                 <img
-                  class="img-fluid bed-icon rounded"
+                  class="img-fluid bed-icon rounded me-3"
                   src="./static/img/bed2.svg"
                 />
                 <img
@@ -233,54 +237,198 @@
               </div>
             </div>
           </div>
+
+          <div class="col col-lg-9 col-sm-12 my-2 py-3">
+            <div class="row">
+              <h4>Mugavused</h4>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-lg-6 col-md-12 col-sm-12 p-3">
+                <ul class="ms-5">
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/cooking.svg"
+                    />
+                    <span class="h5 m-2">Köök</span>
+                  </li>
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/wifi.svg"
+                    />
+                    <span class="h5 m-2">Wifi</span>
+                  </li>
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/washing.svg"
+                    />
+                    <span class="h5 m-2">Tasuta pesumasin</span>
+                  </li>
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/tv.svg"
+                    />
+                    <span class="h5 m-2">Teler</span>
+                  </li>
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/ac.svg"
+                    />
+                    <span class="h5 m-2">Kliimaseade</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 col-md-12 col-sm-12 p-3">
+                <ul class="ms-5">
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/parking.svg"
+                    />
+                    <span class="h5 m-2">Territooriumil tasuta parkimine</span>
+                  </li>
+
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/toys.svg"
+                    />
+                    <span class="h5 m-2">Lasteraamatud ja mänguasjad</span>
+                  </li>
+
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid bed-icon rounded"
+                      src="./static/img/beach.svg"
+                    />
+                    <span class="h5 m-2"
+                      >Avalik või ühiskasutatav pääs rannale</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- CONTENT SECTION 1 END -->
 
       <!-- CONTENT SECTION 2 -->
-      <div class="container-fluid" id="meist">
-        <div class="row p-4 justify-content-center my-4">
-          <h1>Need on meie jalutajad.</h1>
+      <div class="container-fluid g-0" id="tegevused">
+        <div class="middle-container">
+          <div class="row justify-content-end p-4 my-4">
+            <div class="col col-lg-6 col-md-9 col-sm-12 p-4 my-4 text-bright">
+              <h1 class="sireli-majutus">Mida Hiiumaal teha?</h1>
+              <h1>
+                Majandus- ja taristuminister Taavi Aas allkirjastas suursaarte
+                parvlaevaliinide piletihinna määruse, millega kinnitas uued
+                hinnad. Uus hinnakiri hakkab kehtima 1. märtsist.
+              </h1>
+            </div>
+          </div>
         </div>
 
-        <div class="row p-4 px-3 justify-content-around">
+        <div class="row p-4 px-3 grey-bg">
           <div
-            class="card-left col-lg-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center"
+            class="col-lg-3 col-md-6 col-sm-12 my-4 d-flex justify-content-center"
           >
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="static/img/female.webp"
-                alt="Card image cap"
-              />
-              <div class="card-body commontext">
-                <h5 class="card-title h4">Mari Maasikas</h5>
-                <p class="card-text">
-                  Olen kasvanud üles loomade keskel, esimesed kogemused koertega
-                  pärinevad mul varasest lapsepõlvest. Saan sõbraks iga koeraga.
-                </p>
+            <a
+              href="https://www.hiiumaa.ee/kulalisele/soogikohad/"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="static/img/food.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body commontext">
+                  <h5 class="card-title h4">SÖÖGIKOHAD</h5>
+                  <p class="card-text">
+                    Hiiumaa kohvikud, restoranid ja teised söögikohad kingivad
+                    maitsvaid elamusi.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div
-            class="card-right col-lg-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center"
+            class="col-lg-3 col-md-6 col-sm-12 my-4 d-flex justify-content-center"
           >
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="static/img/male.webp"
-                alt="Card image cap"
-              />
-              <div class="card-body commontext">
-                <h5 class="card-title h4">Tiit Tihane</h5>
-                <p class="card-text">
-                  Kuuendat põlve talupidaja, olen pikalt tegelenud karjakoerte
-                  aretusega. Jalutan koertega igal ajal, iga ilmaga.
-                </p>
+            <a
+              href="https://www.hiiumaa.ee/kulalisele/vaatamisvaarsused/"
+              target="_blank"
+              ><div class="card">
+                <img
+                  class="card-img-top"
+                  src="static/img/events.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body commontext">
+                  <h5 class="card-title h4">MIDA VAADATA</h5>
+                  <p class="card-text">
+                    Hiiumaa peidab endas hulgaliselt kauneid looduslikke paiku
+                    ning põnevaid kultuurist ja ajaloost kõnelevaid kohtasid.
+                    Seiklusrikast avastamist!
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 my-4 d-flex justify-content-center"
+          >
+            <a
+              href="https://www.hiiumaa.ee/kulalisele/aktiivne-puhkus/"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="static/img/events2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body commontext">
+                  <h5 class="card-title h4">AKTIIVNE PUHKUS</h5>
+                  <p class="card-text">
+                    Hiiumaa mitmekesine loodus pakub aktiivpuhkuseks lõputuid
+                    võimalusi.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 my-4 d-flex justify-content-center"
+          >
+            <a
+              href="https://www.hiiumaa.ee/kulalisele/praktiline-info/"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="static/img/info.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body commontext">
+                  <h5 class="card-title h4">PRAKTILINE INFO</h5>
+                  <p class="card-text">
+                    Arstiabi Kuhu panna prügi? Rannad Giidid Hiiumaa trükised
+                    Tarbijamärgis “Siin on turvaline”
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -289,7 +437,7 @@
       <!-- CONTENT SECTION 3 -->
       <div class="container-fluid" id="kontakt">
         <div class="row p-4 justify-content-center mt-5">
-          <h1 id="link-anchor">Aga.. kuidas?</h1>
+          <h1 id="link-anchor">Võta ühendust</h1>
         </div>
         <div class="row p-4 px-3 justify-content-around">
           <div class="col-lg-4 col-md-9 col-sm-12 my-2">
@@ -303,12 +451,11 @@
                     <p class="d-none d-md-block h3 bold">
                       <span class="text-nowrap">Telefon: +372 56 565 656</span>
                     </p>
-                    <a
-                      class="d-none d-block d-sm-block d-md-none"
-                      href="tel:+37256565656"
+
+                    <a class="d-sm-block d-md-none" href="tel:+37256565656"
                       ><img
                         class="phone-icon"
-                        src="static/img/phone.svg"
+                        src="./static/img/phone.svg"
                         alt="Helista nupp"
                     /></a>
                   </div>
@@ -352,13 +499,13 @@
 
           <div class="col-lg-6 col-md-9 col-sm-12 my-2">
             <div class="row p-4 justify-content-center">
-              <h2>Tule kohale</h2>
+              <h2>Asukoht</h2>
             </div>
 
             <div class="map-responsive">
               <iframe
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Looduse%20tee%202,%20Vana&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.228054763021!2d22.74559111614417!3d58.994643644854015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f2c17fd1adec17%3A0x9074238428d66a4a!2sSireli%2C%20K%C3%A4rdla%2C%2092413%20Hiiu%20maakond!5e0!3m2!1sen!2see!4v1645553525817!5m2!1sen!2see"
                 frameborder="0"
                 scrolling="no"
                 marginheight="0"
@@ -376,18 +523,13 @@
         <div class="row p-4 text-light">
           <div class="col-lg-6 col-sm-12">
             <div class="contacts mx-2 p-5 commontext">
-              <div class="mb-2">
-                <img
-                  src="static/img/jalutame_160_60_white.svg"
-                  alt="Jalutame!"
-                />
-              </div>
+              <h3>Sireli Majutus</h3>
               <p>Telefon: <span class="text-nowrap">+372 56 565 656</span></p>
               <p>Email: tere@jalutame.ee</p>
               <p>Aadress:</p>
-              <p>Jalutame OÜ</p>
-              <p>Looduse tee 2</p>
-              <p>Vana-võidu</p>
+              <p>Sireli 15</p>
+              <p>Kärdla</p>
+              <p>Hiiumaa</p>
             </div>
           </div>
 
@@ -402,7 +544,7 @@
         </div>
         <div class="row">
           <div class="mx-auto text-bright copyright">
-            <p>Jalutame OÜ 2021</p>
+            <p>Sireli Majutus - õigused kaitstud</p>
           </div>
         </div>
       </div>
