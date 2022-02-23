@@ -46,7 +46,10 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
+                <div
+                  class="collapse navbar-collapse nav-fill"
+                  id="navbarToggler"
+                >
                   <!-- <div class="row nav-menu">
                     <span>
                       <a class="nav-link" href="#majutus">Majutus</a>
@@ -59,7 +62,9 @@
                     </span>
                   </div> -->
 
-                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <ul
+                    class="navbar-nav mb-2 mb-lg-0 justify-content-between w-100"
+                  >
                     <li class="nav-item h2">
                       <a class="nav-link" href="#majutus">Majutus</a>
                     </li>
@@ -79,11 +84,6 @@
           <div class="row justify-content-center h-100 mt-5">
             <div class="col-lg-12 slogan-position text-center">
               <h1 class="sireli-majutus">Sireli majutus</h1>
-              <!-- <img
-                class="img-fluid"
-                src="static/img/sireli_logo_white_big.svg"
-                alt="Jalutame logo"
-                /> -->
               <p class="text-bright h1">Rahulik puhkus ilusal saarel</p>
               <button class="btn" onclick="location.href='#kontakt';">
                 BRONEERI
@@ -96,9 +96,9 @@
 
       <div class="container-fluid" id="pealeht">
         <div class="row p-4 commontext py-5 justify-content-center grey-bg">
-          <div class="col-md-5 col-sm-12">
-            <div>
-              <h3>Mida pakume</h3>
+          <div class="col-lg-6 col-md-9 col-sm-12 py-5">
+            <div class="ms-lg-5 ps-lg-5">
+              <h1>Mida pakume</h1>
               <p>
                 Värskelt renoveeritud valgusküllane külaliskorter rahulikus
                 piirkonnas Kärdla keskuse lähedal. Viie minutilise jalutuskäigu
@@ -120,86 +120,78 @@
             </div>
           </div>
 
-          <div class="col-md-5 col-sm-12 d-flex flex-wrap align-items-center">
-            <div class="container d-flex justify-content-center">
-              <div class="gallery">
-                <a
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image1.jpg"
-                  ><img
-                    class="img-fluid rounded m-2"
-                    src="static/img/gallery/image1.jpg"
-                /></a>
+          <div class="col-lg-6 col-md-9 col-sm-12 py-5 gallery-wrapper mx-auto">
+            <!--  <div class="container justify-content-center"> -->
+            <div class="gallery mx-auto">
+              <a data-fslightbox="gallery" href="static/img/gallery/image1.jpg"
+                ><img
+                  class="img-fluid rounded m-2"
+                  src="static/img/gallery/image1.jpg"
+              /></a>
 
-                <a
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image2.jpg"
-                  ><img
-                    class="img-fluid rounded m-2"
-                    src="static/img/gallery/image2.jpg"
-                /></a>
-                <a
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image3.jpg"
-                  ><img
-                    class="img-fluid rounded m-2"
-                    src="static/img/gallery/image3.jpg"
-                /></a>
-                <a
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image4.jpg"
-                  ><img
-                    class="img-fluid rounded m-2"
-                    src="static/img/gallery/image4.jpg"
-                /></a>
-                <a
-                  class="d-none"
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image5.jpg"
-                  ><img
-                    class="img-fluid rounded"
-                    src="static/img/gallery/image5.jpg"
-                /></a>
-                <a
-                  class="d-none"
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image6.jpg"
-                  ><img
-                    class="img-fluid rounded"
-                    src="static/img/gallery/image6.jpg"
-                /></a>
-                <a
-                  class="d-none"
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image7.jpg"
-                  ><img
-                    class="img-fluid rounded"
-                    src="static/img/gallery/image7.jpg"
-                /></a>
-                <a
-                  class="d-none"
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image8.jpg"
-                  ><img
-                    class="img-fluid rounded"
-                    src="static/img/gallery/image8.jpg"
-                /></a>
-                <a
-                  class="d-none"
-                  data-fslightbox="gallery"
-                  href="static/img/gallery/image1.jpg"
-                  ><img
-                    class="img-fluid rounded"
-                    src="static/img/gallery/image1.jpg"
-                /></a>
-              </div>
+              <a data-fslightbox="gallery" href="static/img/gallery/image2.jpg"
+                ><img
+                  class="img-fluid rounded m-2"
+                  src="static/img/gallery/image2.jpg"
+              /></a>
+              <a data-fslightbox="gallery" href="static/img/gallery/image3.jpg"
+                ><img
+                  class="img-fluid rounded m-2"
+                  src="static/img/gallery/image3.jpg"
+              /></a>
+              <a data-fslightbox="gallery" href="static/img/gallery/image4.jpg"
+                ><img
+                  class="img-fluid rounded m-2"
+                  src="static/img/gallery/image4.jpg"
+              /></a>
+              <a
+                class="d-none"
+                data-fslightbox="gallery"
+                href="static/img/gallery/image5.jpg"
+                ><img
+                  class="img-fluid rounded"
+                  src="static/img/gallery/image5.jpg"
+              /></a>
+              <a
+                class="d-none"
+                data-fslightbox="gallery"
+                href="static/img/gallery/image6.jpg"
+                ><img
+                  class="img-fluid rounded"
+                  src="static/img/gallery/image6.jpg"
+              /></a>
+              <a
+                class="d-none"
+                data-fslightbox="gallery"
+                href="static/img/gallery/image7.jpg"
+                ><img
+                  class="img-fluid rounded"
+                  src="static/img/gallery/image7.jpg"
+              /></a>
+              <a
+                class="d-none"
+                data-fslightbox="gallery"
+                href="static/img/gallery/image8.jpg"
+                ><img
+                  class="img-fluid rounded"
+                  src="static/img/gallery/image8.jpg"
+              /></a>
+              <a
+                class="d-none"
+                data-fslightbox="gallery"
+                href="static/img/gallery/image1.jpg"
+                ><img
+                  class="img-fluid rounded"
+                  src="static/img/gallery/image1.jpg"
+              /></a>
             </div>
+            <!-- </div> -->
           </div>
         </div>
-        <div class="row justify-content-center py-5" id="majutus">
+        <div class="row justify-content-center py-5 my-5" id="majutus">
           <div class="col col-lg-9 col-md-12 col-sm-12 my-2">
-            <div class="row">
-              <h4>Magamisvõimalused</h4>
+            <div class="row h4">
+              <h4 class="ms-4">Magamisvõimalused</h4>
             </div>
             <div class="row justify-content-around py-3">
               <div class="col-md-2 col-sm-12 card-border p-3">
@@ -239,41 +231,41 @@
           </div>
 
           <div class="col col-lg-9 col-sm-12 my-2 py-3">
-            <div class="row">
-              <h4>Mugavused</h4>
+            <div class="row h4">
+              <h4 class="ms-4">Mugavused</h4>
             </div>
             <div class="row justify-content-around">
               <div class="col-lg-6 col-md-12 col-sm-12 p-3">
                 <ul class="ms-5">
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/cooking.svg"
                     />
                     <span class="h5 m-2">Köök</span>
                   </li>
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/wifi.svg"
                     />
                     <span class="h5 m-2">Wifi</span>
                   </li>
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/washing.svg"
                     />
                     <span class="h5 m-2">Tasuta pesumasin</span>
                   </li>
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/tv.svg"
                     />
                     <span class="h5 m-2">Teler</span>
                   </li>
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/ac.svg"
@@ -285,7 +277,7 @@
 
               <div class="col-lg-6 col-md-12 col-sm-12 p-3">
                 <ul class="ms-5">
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/parking.svg"
@@ -293,7 +285,7 @@
                     <span class="h5 m-2">Territooriumil tasuta parkimine</span>
                   </li>
 
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/toys.svg"
@@ -301,7 +293,7 @@
                     <span class="h5 m-2">Lasteraamatud ja mänguasjad</span>
                   </li>
 
-                  <li class="mb-2">
+                  <li class="m-4">
                     <img
                       class="img-fluid bed-icon rounded"
                       src="./static/img/beach.svg"
@@ -322,19 +314,19 @@
       <!-- CONTENT SECTION 2 -->
       <div class="container-fluid g-0" id="tegevused">
         <div class="middle-container">
-          <div class="row justify-content-end p-4 my-4">
+          <div class="row justify-content-end p-4">
             <div class="col col-lg-6 col-md-9 col-sm-12 p-4 my-4 text-bright">
               <h1 class="sireli-majutus">Mida Hiiumaal teha?</h1>
               <h1>
-                Majandus- ja taristuminister Taavi Aas allkirjastas suursaarte
-                parvlaevaliinide piletihinna määruse, millega kinnitas uued
-                hinnad. Uus hinnakiri hakkab kehtima 1. märtsist.
+                Hiiumaa pakub lõputult avastamisrõõmu – nii autoga, rattaga kui
+                ka jalgsi matkajale. Kui otsustad Hiiumaad avastada iseseisvalt,
+                ilma giidita, võid ette võtta Reisi ümber Hiiumaa.
               </h1>
             </div>
           </div>
         </div>
 
-        <div class="row p-4 px-3 grey-bg">
+        <div class="row p-4 py-5 grey-bg d-flex justify-content-center">
           <div
             class="col-lg-3 col-md-6 col-sm-12 my-4 d-flex justify-content-center"
           >
@@ -435,9 +427,9 @@
       <!-- CONTENT SECTION 2 END-->
 
       <!-- CONTENT SECTION 3 -->
-      <div class="container-fluid" id="kontakt">
+      <div class="container-fluid py-5" id="kontakt">
         <div class="row p-4 justify-content-center mt-5">
-          <h1 id="link-anchor">Võta ühendust</h1>
+          <h1 id="link-anchor" class="text-center">Võta meiega ühendust</h1>
         </div>
         <div class="row p-4 px-3 justify-content-around">
           <div class="col-lg-4 col-md-9 col-sm-12 my-2">
@@ -498,7 +490,7 @@
           </div>
 
           <div class="col-lg-6 col-md-9 col-sm-12 my-2">
-            <div class="row p-4 justify-content-center">
+            <div class="row p-4 text-center">
               <h2>Asukoht</h2>
             </div>
 
@@ -537,13 +529,12 @@
             <div class="mx-2 p-5 commontext">
               <h4>Muu info</h4>
               <!-- MAKE THESE MODAL AND ADD POINTER -->
-              <p>Teenusetingimused</p>
-              <p>Privaatsuspoliitika</p>
+              <p>Kodukord</p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="mx-auto text-bright copyright">
+          <div class="text-center text-bright copyright">
             <p>Sireli Majutus - õigused kaitstud</p>
           </div>
         </div>
