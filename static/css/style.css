@@ -1,8 +1,12 @@
 /* RED BORDER FOR TESTING */
 
-/* div {
+div {
   border: 1px solid red;
-} */
+}
+
+span {
+  border: 1px solid red;
+}
 
 /* GLOBAL OPTIONS */
 
@@ -31,6 +35,11 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+li img {
+  min-width: 64px;
+  height: auto;
 }
 
 body p {
@@ -68,10 +77,14 @@ body p {
   height: auto;
 }
 
+.bed-wrapper {
+  width: 96px;
+}
+
 /* BED CARDS END */
 
 /* MOBILE VIEW */
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .hero-container {
     background-image: url("../img/hero_pillow_mobile.webp"); /* The image used */
     background-color: #454545; /* Used if the image is unavailable */
@@ -106,19 +119,19 @@ body p {
   .sireli-majutus {
     font-family: "Itim", serif;
     font-size: 3em;
-    color: #f3f3f3;
+    color: #f8f8f8;
   }
 
   /* GALLERY START */
   .gallery-wrapper {
-    max-width: 550px;
+    max-width: fit-content;
   }
 
   .gallery {
-    max-width: 550px;
+    max-width: fit-content;
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(275px, 275px)); */
-    grid-template-columns: repeat(1, 275px);
+    grid-template-columns: repeat(1, 265px);
     grid-auto-rows: 275px;
   }
 
@@ -179,7 +192,7 @@ body p {
 /* END MOBILE VIEW */
 
 /* DESKTOP VIEW */
-@media (min-width: 577px) {
+@media (min-width: 701px) {
   .hero-container {
     background-image: url("../img/hero_pillow.webp"); /* The image used */
     background-color: #454545; /* Used if the image is unavailable */
@@ -228,7 +241,7 @@ body p {
 
   .sireli-majutus {
     font-family: "Itim", serif;
-    font-size: 8em;
+    font-size: 6em;
     color: #f3f3f3;
   }
 
