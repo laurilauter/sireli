@@ -23,6 +23,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navbar-width {
+  max-width: 80vw;
+}
+
 .footer-bg {
   background-color: #5b704c !important;
 }
@@ -108,7 +112,7 @@ body p {
   /* START SLOGAN positioning */
 
   .slogan-position {
-    margin-top: 30%;
+    margin-top: 10vh;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -120,6 +124,10 @@ body p {
     font-family: "Itim", serif;
     font-size: 3em;
     color: #f8f8f8;
+  }
+
+  .navbar-width {
+    max-width: 100%;
   }
 
   /* GALLERY START */
@@ -232,10 +240,9 @@ body p {
     padding: 1em 0em 3em 0em;
   }
 
-  /*   .nav-dark-bg {
-    background-color: rgba(0, 0, 0, 0.4);
-    margin: 0;
-  } */
+  .navbar-width {
+    max-width: 80vw;
+  }
 
   /* END SLOGAN positioning */
 
