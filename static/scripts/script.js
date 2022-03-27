@@ -51,4 +51,6 @@ form.addEventListener("submit", (e) => {
       console.log("Email sent");
     }
   });
+  console.log("form data ", form);
+  console.log("form data ", form.elements.name.value);
 });
