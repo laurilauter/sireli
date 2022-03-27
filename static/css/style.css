@@ -1,12 +1,12 @@
 /* RED BORDER FOR TESTING */
 
-/* div {
+div {
   border: 1px solid red;
 }
 
 span {
   border: 1px solid red;
-} */
+}
 
 /* GLOBAL OPTIONS */
 
@@ -21,6 +21,29 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.kodukord {
+  max-width: 500px;
+  margin: 30px;
+}
+
+.kodu {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.kodu:hover {
+  text-decoration: none;
+  color: silver;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 .navbar-width {
@@ -123,6 +146,18 @@ body p {
   .sireli-majutus {
     font-family: "Itim", serif;
     font-size: 3em;
+    color: #f8f8f8;
+  }
+
+  .sireli-majutus-small {
+    font-family: "Itim", serif;
+    font-size: 1.8em;
+    color: #f3f3f3;
+  }
+
+  .puhkus {
+    font-family: "Itim", serif;
+    font-size: 2.6em;
     color: #f8f8f8;
   }
 
@@ -252,6 +287,18 @@ body p {
     color: #f3f3f3;
   }
 
+  .sireli-majutus-small {
+    font-family: "Itim", serif;
+    font-size: 2em;
+    color: #f3f3f3;
+  }
+
+  .puhkus {
+    font-family: "Itim", serif;
+    font-size: 5em;
+    color: #f8f8f8;
+  }
+
   /* GALLERY START */
   .gallery-wrapper {
     min-width: 550px;
@@ -280,7 +327,7 @@ body p {
 
   h2,
   .h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 300;
   }
 
@@ -365,12 +412,12 @@ a:active {
   text-decoration: none;
 }
 
-/* card hover expand */
-
-.card:hover {
-  height: auto;
-  opacity: 0.8;
+a h5:hover {
+  text-decoration: none;
+  opacity: 0.6;
 }
+
+/* card hover expand */
 
 /* END font styling */
 
