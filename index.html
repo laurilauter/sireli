@@ -21,11 +21,11 @@
     <!-- Local CSS -->
     <link href="static/css/style.css" rel="stylesheet" />
     <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim:wght@200;300;400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hurricane&family=Meow+Script&family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
+
+
 
     <title>Sireli majutus</title>
   </head>
@@ -99,7 +99,6 @@
                 parkimine maja ees. Selles rahulikus paigas saad kogu perega lõõgastuda.
               </p>
               <br />
-              <!-- <h4>Majutuskoht</h4> -->
               <p>
                 Korteris on kaks magamistuba, avatud elutuba-köök-söögituba ja
                 vannituba. Voodikohti on 8: 2 kaheinimesevoodit, 1 narivoodi ja
@@ -331,7 +330,6 @@
         <div class="middle-container">
           <div class="row justify-content-end p-4">
             <div class="col col-lg-6 col-md-9 col-sm-12 p-4 my-4 text-bright">
-              <!-- <h1 class="sireli-majutus">Mida Hiiumaal teha?</h1> -->
               <br />
               <h1 class="puhkus text-center">Hiiumaa pakub lõputult avastamisrõõmu</h1>
             </div>
@@ -426,17 +424,31 @@
       <!-- CONTENT SECTION 2 END-->
       <!-- CONTENT SECTION 3 -->
 
-      <!-- <div class="container-fluid g-0">
-        <div class="row p-4 py-5 grey-bg d-flex justify-content-center">
-          <div class="col-lg-3 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-            Sõbrad: 
-Hiiurand OÜ
-Värske kohalik kala, kuivatatud kala ja suitsukala
-link FB lehele
-Kalamehe pilt võiks olla ümar, kas nii saab?
+
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="container-fluid container-fluid-inner my-3">
+          <div class="row d-flex justify-content-center w-100">
+
+            <div class="fishtext col-lg-3 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+              <img class="rounded-corners" src="static\img\fisherman.webp" alt="image of fisherman">
             </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+              <div class="fishtext col mx-4">
+                <h3>Meie sõbrad: </h3>
+              <h1>Hiiurand OÜ</h1>
+              <h3>Värske kohalik kala, kuivatatud kala ja suitsukala.</h3>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div> -->
+      </div>
+
+      <!-- GAP -->
+      <div class="container-fluid grey-bg">
+        <br><br>
+      </div>
 
 
       <!-- CONTENT SECTION 3 END -->
@@ -543,7 +555,7 @@ Kalamehe pilt võiks olla ümar, kas nii saab?
           <div class="col-lg-6 col-sm-12">
             <div class="mx-2 p-5 commontext">
               <h5>Muu info</h5>
-              <a href="kodukord.html"  target="_blank"><span class="kodu">Kodukord</span></a>
+              <span id="myBtn" class="pointer kodu">Kodukord</span>
             </div>
           </div>
         </div>
@@ -553,6 +565,75 @@ Kalamehe pilt võiks olla ümar, kas nii saab?
           </div>
         </div>
       </div>
+
+      <!-- Trigger/Open The Modal -->
+
+
+<!-- KODUKORD START -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modalX"><span class="close">&times;</span></div>
+    
+    <div class="kodukord">
+      <div>
+        <h1 class="ml-30">Kodukord</h1>
+        <br>
+            <ol>
+              <li><p>
+              Palume suhtuda heaperemehelikult Teie kasutusse antud korteri varasse
+              ning kasutada ruume,
+              mööblit ja muud inventari vastavalt nende kasutusotstarbele. Vara
+              mitte sihtotstarbelisest kasutusest tekkinud kahjud hüvitab külastaja.
+            </p>
+          </li>
+            <li><p>
+              Korteri palume üle anda korrastatult ruumide kasutamisele eelnenud
+              seisukorras. Palume pesta kõik kasutatud nõud, pühkida põrandad ning
+              panna kokku prügi ja kasutatud voodipesu/rätikud. Kui korteri
+              seisukord nõuab erikoristust, siis kompenseerib külastaja koristuse
+              kulud.
+            </p>
+          </li>
+          <li><p>
+              Külaliskorteris viibivate külaliste arv ei tohi ületada broneerimisel
+              kokkulepitud inimeste arvu.
+            </p></li>
+          <li><p>
+              Ilma eelneva kokkuleppeta ei tohi teha tuld ahju ja puupliidi alla,
+              samuti on keelatud elava tule tegemine.
+            </p></li>
+          <li><p>
+              Meie külaliskorteris ei ole lubatud korraldada pidusid, suitsetada ja
+              käia välisjalanõudega!
+            </p></li>
+          <li><p>
+              Palume hoida öörahu kella 22-07 vahel ja suhtuda lugupidavalt
+              kortermaja teistesse elanikesse.
+            </p></li>
+          <li><p>Lemmikloomad ei ole meie külaliskorteris lubatud.</p></li>
+            </ol>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <!-- KODUKORD END -->
     </div>
 
     <!-- Bootstrap 5 Bundle -->
