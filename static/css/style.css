@@ -6,8 +6,8 @@
 
 span {
   border: 1px solid red;
-}
- */
+} */
+
 /* GLOBAL OPTIONS */
 
 html,
@@ -25,6 +25,15 @@ body {
 
 .pointer {
   cursor: pointer;
+}
+
+.fb-link {
+  color: #333333;
+}
+
+.fb-link:hover {
+  color: #3b5998;
+  text-shadow: 2px 2px 8px #b5cbfc;
 }
 
 .kodukord {
@@ -80,7 +89,7 @@ li img {
 }
 
 body p {
-  line-height: 32px;
+  line-height: 28px;
 }
 
 .gallery img {
@@ -222,7 +231,7 @@ body p {
   }
 
   .commontext {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
   }
 
@@ -428,7 +437,7 @@ body p {
   }
 
   .commontext {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 300;
   }
 
@@ -519,7 +528,9 @@ a h5:hover {
 
 /* FISHERMAN IMAGE */
 img.rounded-corners {
-  border-radius: 0.25em;
+  max-width: 200px;
+  max-width: auto;
+  border-radius: 10em;
 }
 
 .fishtext {
