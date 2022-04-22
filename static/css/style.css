@@ -172,20 +172,26 @@ body p {
   /*  END SLOGAN positioning */
 
   .sireli-majutus {
-    font-family: "Meow Script", cursive;
-    font-size: 6em;
+    font-family: "Abel", sans-serif;
+    font-size: 4em;
     color: #f8f8f8;
   }
 
   .sireli-majutus-small {
-    font-family: "Meow Script", cursive;
-    font-size: 3em;
+    font-family: "Abel", sans-serif;
+    font-size: 2em;
     color: #f3f3f3;
   }
 
+  .sireli-majutus-small-dark {
+    font-family: "Abel", sans-serif;
+    font-size: 2em;
+    color: #333333;
+  }
+
   .puhkus {
-    font-family: "Meow Script", cursive;
-    font-size: 4em;
+    font-family: "Abel", sans-serif;
+    font-size: 3em;
     color: #f8f8f8;
   }
 
@@ -231,7 +237,7 @@ body p {
   }
 
   .commontext {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
   }
 
@@ -376,20 +382,26 @@ body p {
   /* END SLOGAN positioning */
 
   .sireli-majutus {
-    font-family: "Meow Script", cursive;
-    font-size: 9em;
+    font-family: "Abel", sans-serif;
+    font-size: 6em;
     color: #f3f3f3;
   }
 
   .sireli-majutus-small {
-    font-family: "Meow Script", cursive;
-    font-size: 3em;
+    font-family: "Abel", sans-serif;
+    font-size: 2.2em;
     color: #f3f3f3;
   }
 
+  .sireli-majutus-small-dark {
+    font-family: "Abel", sans-serif;
+    font-size: 2.2em;
+    color: #333333;
+  }
+
   .puhkus {
-    font-family: "Meow Script", cursive;
-    font-size: 8em;
+    font-family: "Abel", sans-serif;
+    font-size: 4em;
     color: #f8f8f8;
   }
 
@@ -437,7 +449,7 @@ body p {
   }
 
   .commontext {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 300;
   }
 
@@ -450,7 +462,7 @@ body p {
   /* CARD STYLING START */
 
   .card {
-    max-width: 24rem;
+    max-width: 18rem;
   }
 
   /* MAP options */
@@ -537,9 +549,10 @@ img.rounded-corners {
   min-width: 200px;
 }
 
-.fishtext img {
-  min-width: 200px;
+.fish-fb-img:hover {
+  opacity: 0.8;
 }
+
 /* FISHERMAN IMAGE */
 
 /* Button styles START */
